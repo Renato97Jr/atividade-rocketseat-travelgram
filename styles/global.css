@@ -15,7 +15,31 @@
     --text-color-primary: #313131;
     --text-color-secondary: #6C6C6C;
     /* tipografia */
-    --heading1: ;
-    
-
+    --font-family: "poppins", sans-serif;
+    --paragraph-sm: 0.75rem/170% var(--font-family);
+    --paragraph-md: 0.875rem/170% var(--font-family);
+    --heading1: bold 2rem/125% var(--font-family);
+    --text: 0.75rem/150% var(--font-family);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 2rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    font: var(--text);
+}
+nav ul li p:hover {
+    color: var(--brand-color);
+    text-decoration:underline;
+    transition: color 0.2s;
+}
+nav ul li:last-child img {
+        width: 2.5rem;
+        height: 2.5rem;
 }
