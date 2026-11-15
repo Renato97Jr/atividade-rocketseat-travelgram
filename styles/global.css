@@ -33,6 +33,7 @@ nav ul {
     gap: 1rem;
     align-items: center;
     font: var(--text);
+    color: var(--text-color-secondary);
 }
 nav ul li p:hover {
     color: var(--brand-color);
@@ -42,4 +43,61 @@ nav ul li p:hover {
 nav ul li:last-child img {
         width: 2.5rem;
         height: 2.5rem;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+    margin: 0 auto;
+    align-items: center;
+}
+figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem;
+    gap: 2rem;
+    max-width: 592px;
+}
+figure img {
+    height: 176px;
+    width: 176px;
+}
+figcaption {
+    display: flex;
+    flex-direction: column;
+    max-width: 384px;
+    gap: 0.5rem;
+}
+figcaption h1 {
+    font: var(--heading1);
+    color: var(--text-color-primary);
+
+}
+figcaption p {
+    font: var(--paragraph-md);
+    color: var(--text-color-secondary);
+    align-items: center;
+}
+
+section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 280px;
+}
+
+section li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color-secondary);
+    font: var(--paragraph-md);
+}
+span:hover {
+    color: var(--brand-color);
+    transition: 0.2s;
 }
